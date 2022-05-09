@@ -42,6 +42,10 @@ for d in date:
 for candidat in candidats:
     plt.plot(date, candidat["count"])
 
-plt.legend(list_candidats)
+plt.xlabel("date")
+plt.ylabel("nombre de tweet")
+plt.xticks(rotation=25)
+plt.title("Evolution du nombre de tweets sur les candidats")
+
+plt.legend(list_candidats, prop={'size': 8})
 plt.show()
-git@github.com:PhoqueEberlue/leboncoin-scrapper.git
